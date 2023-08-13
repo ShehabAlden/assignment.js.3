@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="img/download.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main-color py-5">
+        <div class="container">
+            <div class="title border border-top-0 border-start-0 border-end-0 border-2 border-black p-5 border-dotted">
+                <h1 class="text-center ">Bookmarker</h1>
+            </div>
+            <div
+                class="bookmark-form p-4 border border-top-0 border-start-0 border-end-0 border-2 border-black border-dotted">
+                <h2 class="text-center"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                        class="fa-solid fa-bookmark"></i></h2>
+                <div class="site-name Caption-font fw-bold mt-4">
+                    <label for="siteName"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+                    <input id="siteName" type="text" class="form-control mt-2" placeholder="Bookmark Name">
+                </div>
+                <div class="site-url Caption-font fw-bold mt-4">
+                    <label for="siteUrl"><i class="fa-solid fa-link"></i> Site URL</label>
+                    <input id="siteUrl" type="text" class="form-control mt-2" placeholder="Website URL">
+                </div>
+                <div class="text-center mt-4 Caption-font">
+                    <button class="btn btn-danger px-5" id="addSite">Submit</button>
+                </div>
+            </div>
+            <table class="table text-center Caption-font mt-4">
+                <thead>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- <td class="p-center">1</td>
+                        <td class="p-center">shehab</td>
+                        <td><a href="https://www.google.com" target="_blank" class="btn btn-success text-white"><i class="fa-solid fa-eye"></i> Visit</a></td>
+                        <td><button class="btn btn-danger text-white"><i class="fa-solid fa-trash-can"></i> Delete</button></td> -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <div id="modelBox">
+        <div id="innerBox" class="rounded-2 position-relative">
+            <i id="closeEl" class="fa fa-2x fa-xmark"></i>
+            <div class="dot-color"></div>
+            <div class="innerbox-body Caption-font">
+                <h5 class="fw-semibold mt-5 mb-3">Site Name or Url is not valid, Please follow the rules below :</h5>
+                <ul class="list-unstyled">
+                    <li class="pb-3"><i class="fa-regular fa-circle-right text-danger"></i> Site name must contain at least 3 characters</li>
+                    <li><i class="fa-regular fa-circle-right text-danger"></i> Site URL must be a valid one</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

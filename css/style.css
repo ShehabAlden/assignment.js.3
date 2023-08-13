@@ -1,0 +1,102 @@
+.main-color{
+    background-color: #F7ECDE;
+}
+.Caption-font{
+    font-family: 'PT Sans Caption', sans-serif;
+}
+.border-dotted{
+    border-bottom-style: dotted !important;
+}
+.p-center{
+    padding-top: 19px !important;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    position: relative;
+    z-index: 2;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    width: 24%;
+    left: 38%;
+    top: 65%;
+    bottom: 0%;
+    background-color: #FEC260;
+    z-index: -1;
+    transition: top 0.5s;
+}
+h1:hover::before{
+    top: 32%;
+}
+.bookmark-form h2{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Righteous', cursive;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.form-control:focus{
+    border-color: #d99c39 !important;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.visit-btn-color{
+    background-color: #8A9E23;
+}
+#modelBox{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.32);
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#innerBox{
+    width: 38%;
+    height: 300px;
+    background-color: #fff;
+    padding: 40px 20px;
+}
+.dot-color{
+    background-color: #F15F5D;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+}
+.dot-color::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 0px;
+    left: 30px;
+    background-color: #FEBE2E;
+}
+.dot-color::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 0px;
+    left: 60px;
+    background-color: #4DB748;
+}
+.innerbox-body ul{
+    font-size: 18px;
+}
+#closeEl{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 38px 20px;
+    cursor: pointer;
+}
